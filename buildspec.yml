@@ -10,7 +10,8 @@ phases:
       - npm install
   build:
     commands:
-      - echo Build phase completed
+      - echo Build completed successfully
 artifacts:
+  base-directory: backend
   files:
     - '**/*'

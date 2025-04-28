@@ -8,10 +8,15 @@ phases:
       - echo Installing backend dependencies...
       - cd backend
       - npm install
+      - cd ..
+      - echo Installing frontend dependencies...
+      - cd frontend
+      - npm install
   build:
     commands:
-      - echo Build completed successfully
+      - echo Building frontend...
+      - cd frontend
+      - npm run build
 artifacts:
-  base-directory: backend
   files:
     - '**/*'
